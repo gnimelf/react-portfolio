@@ -3,7 +3,8 @@ import React from "react";
 export default function Home() {
     return (
         <main>
-            <h1>About me</h1>
+            <section id="about-me">
+            <h1 className="sub-heading">About me</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 dapibus, libero in finibus pellentesque, purus turpis commodo
@@ -28,6 +29,7 @@ export default function Home() {
                 ligula ut neque vehicula pharetra. Phasellus commodo placerat
                 sodales. Mauris mattis ligula ultrices nibh iaculis pharetra.
             </p>
+        </section>
         </main>
     );
 }
