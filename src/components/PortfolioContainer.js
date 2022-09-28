@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NaviBar from "./naviBar"
-import Home from "./pages/home"
+import Home from "./pages/Home"
+import Work from "./pages/Work"
 
 // export 
 export default function PortfolioContainer() {
@@ -8,13 +9,15 @@ export default function PortfolioContainer() {
     const renderPage = () => {
         if (currentPage === 'Home') {
             return <Home />
+        } else if (currentPage === 'Work') {
+            return <Work />
         }
     }
 
     const handlePageChange = (page) => setCurrentPage(page);
     return (
         <div>
-            <NaviBar/>
+            <NaviBar handlePageChange={handlePageChange}/>
             {renderPage()}
         </div>
     )

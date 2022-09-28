@@ -1,21 +1,27 @@
 import React, { useState } from "react";
 
-export default function NaviBar({ currentPage, handlePageChange }) {
+export default function NaviBar({ handlePageChange }) {
     return (
-        <header class="header">
+        <header className="header">
             <figure id="me">
                 <img id="me"/>
             </figure>
-            <section class="title-menu">
-                <section class="title">
+            <section className="title-menu">
+                <section className="title">
                     <h1>Justin Fleming</h1>
                 </section>
                 <nav>
-                    <ul class="nav-menu"></ul>
+                    <ul className="nav-menu">
+                        <li><a href="#home" onClick={() => handlePageChange('Home')} >Home</a></li>
+                        <li><a href="#home" onClick={() => handlePageChange('Work')}>Work</a></li>
+                        <li><a href="#body">Contact Me</a></li>
+                        <li><a href="#body">Resume</a></li>
+                    </ul>
+                    
                 </nav>
             </section>
 
-            <figure class="hero"></figure>
+            <figure className="hero"></figure>
         </header>
     );
 }
