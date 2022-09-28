@@ -335,8 +335,7 @@ footer h2 {
 @media screen and (max-width: 1483px) {
     main {
         /* position:absolute; */
-        align-items: center;
-        margin-top: 40;
+        margin: 40 50px;
     }
 
     .link-img {
@@ -353,8 +352,8 @@ footer h2 {
 /* Mobile response screen format @ 1340px */
 @media screen and (max-width: 1370px) {
     main{
-        position: relative;
-        margin-top: 30;
+        /* position: relative; */
+        margin: 30px 50px 0;
     }
 
     footer{
