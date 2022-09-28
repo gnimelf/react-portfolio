@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
     return (
-        <div>
+        <main>
             <h1>About me</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -28,6 +28,6 @@ export default function Home() {
                 ligula ut neque vehicula pharetra. Phasellus commodo placerat
                 sodales. Mauris mattis ligula ultrices nibh iaculis pharetra.
             </p>
-        </div>
+        </main>
     );
 }
