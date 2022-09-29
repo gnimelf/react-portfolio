@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NaviBar from "./naviBar"
 import Footer from "./Footer"
-import Home from "./pages/Home"
+import About from "./pages/About"
 import Work from "./pages/Work"
 
 // export 
@@ -9,7 +9,7 @@ export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home')
     const renderPage = () => {
         if (currentPage === 'Home') {
-            return <Home />
+            return <About />
         } else if (currentPage === 'Work') {
             return <Work />
         }

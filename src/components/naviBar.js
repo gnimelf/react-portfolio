@@ -12,8 +12,8 @@ export default function NaviBar({ handlePageChange }) {
                 </section>
                 <nav>
                     <ul className="nav-menu">
-                        <li><a href="#home" onClick={() => handlePageChange('Home')} >Home</a></li>
-                        <li><a href="#home" onClick={() => handlePageChange('Work')}>Work</a></li>
+                        <li><a href="#" onClick={() => handlePageChange('About')} >Home</a></li>
+                        <li><a href="#" onClick={() => handlePageChange('Work')}>Work</a></li>
                         <li><a href="#body">Contact Me</a></li>
                         <li><a href="#body">Resume</a></li>
                     </ul>

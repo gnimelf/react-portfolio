@@ -1,6 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Home() {
+export default function About() {
     return (
         <main>
             <section id="about-me">
@@ -30,6 +31,22 @@ export default function Home() {
                 sodales. Mauris mattis ligula ultrices nibh iaculis pharetra.
             </p>
         </section>
+        <section className="contact-items">
+
+                <section className="social-media ">
+                    <figure id="github" className="github">
+                        <a href="https://github.com/gnimelf">
+                            <i className="contact-icon"><FontAwesomeIcon icon={["fab", "github"]} /></i>
+                        </a>
+                    </figure>
+                    <figure className="linkedIn ">
+                        <a href="https://www.linkedin.com/">
+                            <i className="contact-icon"><FontAwesomeIcon icon={["fab", "linkedin"]}></FontAwesomeIcon></i>
+                        </a>
+                    </figure>
+                </section>
+            </section>
+
         </main>
     );
 }
