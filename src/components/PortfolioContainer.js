@@ -8,7 +8,7 @@ import Work from "./pages/Work"
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home')
     const renderPage = () => {
-        if (currentPage === 'Home') {
+        if (currentPage === 'About') {
             return <About />
         } else if (currentPage === 'Work') {
             return <Work />
