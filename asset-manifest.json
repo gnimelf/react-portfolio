@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.f1610e56.css",
+    "main.js": "/react-portfolio/static/js/main.083387ea.js",
+    "static/media/project 2.png": "/react-portfolio/static/media/project 2.dd17f2d19404ba339b2b.png",
+    "static/media/project_1.png": "/react-portfolio/static/media/project_1.5f113df15a01e5f34bff.png",
+    "static/media/hero_full.png": "/react-portfolio/static/media/hero_full.93fc41491ea71989639e.png",
+    "static/media/group-project-1.png": "/react-portfolio/static/media/group-project-1.d6f6b4ba5314027d2d36.png",
+    "static/media/project-tracker.png": "/react-portfolio/static/media/project-tracker.faa915e21e0dceebf20c.png",
+    "static/media/employee_tracker.png": "/react-portfolio/static/media/employee_tracker.81a789836d1f3dda15a9.png",
+    "static/media/weather_dashboard.png": "/react-portfolio/static/media/weather_dashboard.8a80f75eb37861bb9bc6.png",
+    "static/media/shopping_list.png": "/react-portfolio/static/media/shopping_list.1aa3b262bea22c449f12.png",
+    "static/media/me.jpg": "/react-portfolio/static/media/me.fa9ae1ece7ab281cb4e5.jpg",
+    "static/media/loc_search_tool.png": "/react-portfolio/static/media/loc_search_tool.b23fd86369be9722dfcd.png",
+    "static/media/wordguess.png": "/react-portfolio/static/media/wordguess.9b4cefee9da061d4bc25.png",
+    "static/media/tech-blog.png": "/react-portfolio/static/media/tech-blog.2234d5c12ff13f4ab60c.png",
+    "static/media/quiz-game.png": "/react-portfolio/static/media/quiz-game.88422c29e989d03d5712.png",
+    "static/media/pass-gen.png": "/react-portfolio/static/media/pass-gen.f25273bdb17d4d0f8f71.png",
+    "static/media/daily_work_schedule.png": "/react-portfolio/static/media/daily_work_schedule.1f5991ad9cb45b0b5e26.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.f1610e56.css.map": "/react-portfolio/static/css/main.f1610e56.css.map",
+    "main.083387ea.js.map": "/react-portfolio/static/js/main.083387ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1610e56.css",
+    "static/js/main.083387ea.js"
+  ]
+}
