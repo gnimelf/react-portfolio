@@ -331,6 +331,8 @@ footer h2 {
     color: red;
 }
 
+
+
 /* self image */
 #me img {
     position: absolute;
@@ -350,19 +352,20 @@ footer h2 {
 #about-me p,
 #contact-me form,
 #work .projects,
-#contact .contact-items {
+#contact .contact-items,
+#resume #resume-content{
     width: 100%;
     border-left: 5px solid var(--medium);
-    padding-left: 10px;
+    padding-left: 29px;
 }
 
 /* The main sections base */
 #about-me,
 #work,
 #contact,
-#contact-me {
+#contact-me,
+#resume {
     display: flex;
-    /* padding: 50px 0; */
     margin: 50px;
 }
 
@@ -390,8 +393,37 @@ footer h2 {
     font-size: 16px;
 }
 
+
+#resume {
+    max-width: 1000px;
+    text-align: center;
+    font-family: var(--font_family);
+}
+
+#resume hr{
+    border: none;
+    border-top: 3px dotted;
+    width: 250px;
+}
+
+#resume p,
+#resume #fullname,
+#resume h3,
+#resume ul{
+    padding: 10px 0;
+}
+
+#resume-summary, #resume-skills p, #resume-edu {
+    text-align: left;
+}
+
+#resume-relevant-exp {
+    display: flex;
+    justify-content:space-between;
+}
+
 /* Mobile response screen format @ 1480px */
-@media screen and (max-width: 1483px) {
+@media screen and (max-width: 1583px) {
     main {
         align-items: center;
         margin-top: 40;
@@ -404,6 +436,13 @@ footer h2 {
 
     .projects {
         justify-content: space-between;
+    }
+
+    #resume {
+        max-width: 1000px;
+        padding: 30px 0;
+        text-align: center;
+        font-family: var(--font_family);
     }
 }
 
@@ -463,9 +502,17 @@ footer h2 {
     #about-me,
     #work,
     #contact,
-    #contact-me {
+    #contact-me,
+    #resume {
         display: inline;
         width: 100%;
         border: none;
+    }
+
+    #resume {
+        max-width: 1000px;
+        padding: 30px 0;
+        text-align: center;
+        font-family: var(--font_family);
     }
 }
