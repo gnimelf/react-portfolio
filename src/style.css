@@ -30,14 +30,19 @@ span {
 
 /* Main Section */
 main {
+   
     margin: 30px 65px 0;
     align-items: center;
 }
 
+label {
+    font-size: medium;
+}
 
 /* Footer Section */
 footer {
-    /* margin-top: 1800px; */
+    position:relative;
+    height: auto;
     width: 100%;
     left: -30px;
     padding: 15px 34px;
@@ -70,7 +75,6 @@ footer h2 {
     background-color: var(--medium);
     width: 100%; 
     flex-wrap: wrap;
-    /* position: fixed; */
     z-index: 3;
     box-shadow: 0 5px 5px var(--dark);
 }
@@ -252,15 +256,13 @@ footer h2 {
     font-family: var(--font_family)
 }
 
-.contact-icon, .phone-icon, .email-icon{
+.contact-icon{
     background: var(--medium);
     color: var(--light);
-    padding: 5px;
+    padding: 5px 10px;
     border: 5px solid var(--medium);
-    border-radius: 50%;
+    border-radius: 30px;
     line-height: 63px;
-    height: 35px;
-    width: 35px; 
     font-size: 30px;
     transition: .5s;
 }
@@ -272,16 +274,9 @@ footer h2 {
     text-shadow: 0 0 20px var(--dark);
   }
 
-/* Apply flex to the contact me email and phone icon and text */
-.phone, .email {
-    display: flex;
-    justify-content:center;  
-    align-items: center;
-}
-
 
 /* Add spacing around each contact group */
-.social-media, .phone, .email{
+.social-media{
     margin: 20px;
     
 }
@@ -297,6 +292,10 @@ footer h2 {
     justify-content:center;
 }
 
+.error-text{
+    color: red;
+}
+
 /* self image */
 #me img {
     position: absolute;
@@ -304,21 +303,22 @@ footer h2 {
     border-radius: 25px;
     height: 204.75px;
     width: 187px;
-    content: url("./images/me.jpg");
     border: 3px solid var(--dark);
     box-shadow: 0 5px 5px var(--dark);
+    content: url("./images/me.jpg");
 }
 
-#about-me p, #work .projects, #contact .contact-items{
+#about-me p, #contact-me form, #work .projects, #contact .contact-items{
     width: 100%;
     border-left: 5px solid var(--medium);
     padding-left: 10px;
 }
 
 /* The main sections base */
-#about-me, #work, #contact{
+#about-me, #work, #contact, #contact-me{
     display: flex;
-    margin: 35px;
+    /* padding: 50px 0; */
+    margin: 50px;
 }
 
 #about-me, #work{
@@ -334,8 +334,8 @@ footer h2 {
 /* Mobile response screen format @ 1480px */
 @media screen and (max-width: 1483px) {
     main {
-        /* position:absolute; */
-        margin: 40 50px;
+        align-items: center;
+        margin-top: 40;
     }
 
     .link-img {
@@ -352,8 +352,9 @@ footer h2 {
 /* Mobile response screen format @ 1340px */
 @media screen and (max-width: 1370px) {
     main{
-        /* position: relative; */
-        margin: 30px 50px 0;
+        position: relative;
+        padding: 0 0 0 40px;
+        margin-top: 0;
     }
 
     footer{
@@ -406,7 +407,7 @@ footer h2 {
         margin: 10px 30px;
     }
 
-    #about-me, #work, #contact{
+    #about-me, #work, #contact, #contact-me{
         display: inline;
         width: 100%;
         border: none;
