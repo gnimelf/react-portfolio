@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NaviBar from "./naviBar"
+import Header from "./Header"
 import Footer from "./Footer"
 import About from "./pages/About"
 import Work from "./pages/Work"
@@ -24,7 +24,7 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
     return (
         <div>
-            <NaviBar handlePageChange={handlePageChange}/>
+            <Header handlePageChange={handlePageChange}/>
             {renderPage()}
             <Footer/>
         </div>
