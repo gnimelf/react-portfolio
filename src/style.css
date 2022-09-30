@@ -1,8 +1,8 @@
 /* Color scheme */
 :root {
-    --light: #DDDDDD;
-    --medium: #3C8DAD;
-    --dark: #112B3C;
+    --light: #dddddd;
+    --medium: #3c8dad;
+    --dark: #112b3c;
     --font_family: Montserrat, sans-serif, serif;
     --heading_font_family: Montserrat, sans-serif, serif;
     --b_rad: 25px;
@@ -14,7 +14,10 @@ body {
     background: var(--light);
 }
 
-h1, p, span, h2{
+h1,
+p,
+span,
+h2 {
     font-family: var(--font_family);
 }
 
@@ -30,22 +33,41 @@ span {
 
 /* Main Section */
 main {
-   
     margin: 30px 65px 0;
     align-items: center;
 }
 
-label {
+/* Form section */
+form{
+    height: 60vh;
+    align-items: center;
+    font-family: var(--font_family);
+}
+
+form input{
+    width: 90%;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form div {
+    text-align: center;
+}
+
+form button {
+    font-weight: 700;
+    width: 200px;
+}
+
+form label {
     font-size: medium;
 }
 
 /* Footer Section */
 footer {
-    position:relative;
-    height: auto;
+    padding: 2px 0;
     width: 100%;
-    left: -30px;
-    padding: 15px 34px;
     align-content: center;
     text-align: center;
     background-color: var(--medium);
@@ -57,7 +79,6 @@ footer h2 {
     padding: 20px 0;
 }
 
-
 /* Name section */
 .title {
     font-size: 48px;
@@ -65,15 +86,15 @@ footer h2 {
     margin-left: 200px;
 }
 
-.title{
+.title {
     color: var(--light);
 }
 
 .header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: var(--medium);
-    width: 100%; 
+    width: 100%;
     flex-wrap: wrap;
     z-index: 3;
     box-shadow: 0 5px 5px var(--dark);
@@ -92,7 +113,7 @@ footer h2 {
     flex-wrap: wrap;
     margin: 0 7.5px;
     padding-bottom: 1px;
-    min-width: fit-content;    
+    min-width: fit-content;
 }
 
 .nav-menu li a {
@@ -109,7 +130,7 @@ footer h2 {
 }
 
 .nav-menu {
-    display:flex;
+    display: flex;
     padding: 20px 0;
 }
 
@@ -149,21 +170,32 @@ footer h2 {
     margin-bottom: 10px;
 }
 
-.hero-project, .sub-project {
+.hero-project,
+.sub-project {
     width: 100%;
     height: 100%;
     border: 3px solid var(--dark);
     background-color: var(--medium);
     background-repeat: no-repeat;
     border-radius: var(--b_rad);
-    opacity: .5;
+    opacity: 0.5;
     transition: opacity 1s;
 }
 
-.sub-proj2, .sub-proj3, .sub-proj4, .sub-proj5, .sub-proj6, .sub-proj7, .sub-proj8, .sub-proj9, .sub-proj10, .sub-proj11, .sub-proj12 .sub-proj13, .sub-proj14{
+.sub-proj2,
+.sub-proj3,
+.sub-proj4,
+.sub-proj5,
+.sub-proj6,
+.sub-proj7,
+.sub-proj8,
+.sub-proj9,
+.sub-proj10,
+.sub-proj11,
+.sub-proj12 .sub-proj13,
+.sub-proj14 {
     background-size: 110%;
     background-position: 50% 5%;
-
 }
 
 /* Main project image format */
@@ -183,11 +215,11 @@ footer h2 {
     background-image: url("./images/project\ 2.png");
 }
 
-.sub-proj4{
+.sub-proj4 {
     background-image: url("./images/pass-gen.png");
 }
 
-.sub-proj5{
+.sub-proj5 {
     background-image: url("./images/quiz-game.png");
 }
 
@@ -221,17 +253,18 @@ footer h2 {
 }
 .sub-proj13 {
     background-image: url("./images/group-project-1.png");
-    background-position:  50% 30%;
+    background-position: 50% 30%;
     background-size: 130%;
 }
 .sub-proj14 {
     background-image: url("./images/project_1.png");
-    background-position:  0 85%;
+    background-position: 0 85%;
     background-size: 130%;
 }
 
 /* Hover functionality */
-.sub-project:hover, .hero-project:hover {
+.sub-project:hover,
+.hero-project:hover {
     opacity: 1;
 }
 
@@ -249,50 +282,52 @@ footer h2 {
     top: 55%;
     background-color: var(--dark);
     border-radius: 0 10px 10px 0;
-    color:var(--light);
+    color: var(--light);
     padding: 20px 40px;
     z-index: 2;
     font-size: large;
-    font-family: var(--font_family)
+    font-family: var(--font_family);
 }
 
-.contact-icon{
+.contact-icon {
     background: var(--medium);
     color: var(--light);
-    padding: 5px 10px;
+    padding: 2px 10px;
     border: 5px solid var(--medium);
     border-radius: 30px;
     line-height: 63px;
     font-size: 30px;
-    transition: .5s;
+    transition: 0.5s;
 }
-
 
 .contact-icon:hover {
     color: var(--dark);
     box-shadow: 0 0 20px var(--dark);
     text-shadow: 0 0 20px var(--dark);
-  }
-
+}
 
 /* Add spacing around each contact group */
-.social-media{
+.social-media {
     margin: 20px;
-    
 }
 
 /* Social media icon spacing */
-.github, .linkedIn {
+.github,
+.linkedIn {
     margin: 0 15px;
 }
 
 /* Set flex on social media icons */
 .social-media {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
-.error-text{
+.contact{
+    align-content: center;
+}
+
+.error-text {
     color: red;
 }
 
@@ -308,27 +343,51 @@ footer h2 {
     content: url("./images/me.jpg");
 }
 
-#about-me p, #contact-me form, #work .projects, #contact .contact-items{
+#about-me {
+    height: 50vh;
+}
+
+#about-me p,
+#contact-me form,
+#work .projects,
+#contact .contact-items {
     width: 100%;
     border-left: 5px solid var(--medium);
     padding-left: 10px;
 }
 
 /* The main sections base */
-#about-me, #work, #contact, #contact-me{
+#about-me,
+#work,
+#contact,
+#contact-me {
     display: flex;
     /* padding: 50px 0; */
     margin: 50px;
 }
 
-#about-me, #work{
-  justify-content:center;  
+#about-me,
+#work {
+    justify-content: center;
 }
 
 #contact {
     align-items: center;
     justify-content: space-between;
-    vertical-align:middle
+    vertical-align: middle;
+}
+
+#submit {
+    background-color: var(--dark);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    margin: 10px;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /* Mobile response screen format @ 1480px */
@@ -342,27 +401,21 @@ footer h2 {
         width: 100%;
         margin-top: 10px;
     }
-    
-    .projects{
+
+    .projects {
         justify-content: space-between;
     }
-
 }
 
 /* Mobile response screen format @ 1340px */
 @media screen and (max-width: 1370px) {
-    main{
+    main {
         position: relative;
         padding: 0 0 0 40px;
         margin-top: 0;
     }
 
-    footer{
-        position:absolute;
-        padding: 0 64px 0 64px;
-    }
-
-    .hero-project{
+    .hero-project {
         background-size: 130%;
     }
 
@@ -377,14 +430,14 @@ footer h2 {
         justify-content: center;
         position: relative;
     }
-  
+
     .nav-menu {
         margin: 0px;
         justify-content: center;
         padding: 10px 30px;
     }
 
-    .nav-menu li a{
+    .nav-menu li a {
         font-size: 20px;
     }
 
@@ -407,7 +460,10 @@ footer h2 {
         margin: 10px 30px;
     }
 
-    #about-me, #work, #contact, #contact-me{
+    #about-me,
+    #work,
+    #contact,
+    #contact-me {
         display: inline;
         width: 100%;
         border: none;

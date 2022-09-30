@@ -12,7 +12,6 @@ function Contact() {
 
     // Handle changes to input fields
     const handleInputChange = (e) => {
-
         console.log(e.target.value);
 
         const { target } = e;
@@ -24,13 +23,13 @@ function Contact() {
             setFirstName(inputValue);
         } else if (inputType === "lastName") {
             setLastName(inputValue);
-        } else if (inputType === "email"){
+        } else if (inputType === "email") {
             setEmail(inputValue);
         }
     };
 
     const handleFormSubmit = (e) => {
-        console.log(e.target)
+        console.log(e.target);
         e.preventDefault();
 
         if (!firstName || !lastName) {
@@ -46,7 +45,7 @@ function Contact() {
         setFirstName("");
         setLastName("");
         setEmail("");
-        setErrorMessage("")
+        setErrorMessage("");
     };
 
     // return form
@@ -67,9 +66,16 @@ function Contact() {
                     <br />
                     <input name="email" onChange={handleInputChange} />
                     <br />
-                    <button type="button" onClick={handleFormSubmit}>
-                        Send
-                    </button>
+                    <div>
+                        <button
+                            id="submit"
+                            type="button"
+                            onClick={handleFormSubmit}
+                        >
+                            Send
+                        </button>
+                    </div>
+
                     <p className="error-text">{errorMessage}</p>
                 </form>
             </section>
