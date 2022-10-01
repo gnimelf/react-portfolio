@@ -421,6 +421,16 @@ footer h2 {
     display: flex;
     justify-content:space-between;
 }
+#dl-resume{
+    margin: 20px;
+}
+#dl-resume a {
+    background-color: #112b3c;
+    color: white;
+
+    padding: 20px;
+    border-radius: 20px;
+}
 
 /* Mobile response screen format @ 1480px */
 @media screen and (max-width: 1583px) {
@@ -438,8 +448,8 @@ footer h2 {
         justify-content: space-between;
     }
 
-    #resume {
-        max-width: 1000px;
+    #resume-content {
+        max-width: 800px;
         padding: 30px 0;
         text-align: center;
         font-family: var(--font_family);
@@ -503,14 +513,14 @@ footer h2 {
     #work,
     #contact,
     #contact-me,
-    #resume {
+    #resume{
         display: inline;
         width: 100%;
         border: none;
     }
 
-    #resume {
-        max-width: 1000px;
+    #resume-content {
+        max-width: 800px;
         padding: 30px 0;
         text-align: center;
         font-family: var(--font_family);

@@ -92,6 +92,10 @@ export default function Resume() {
                             MongoDB, Express, Handelbars.js, and ReactJS.
                         </p>
                     </div>
+                    <div id="dl-resume">
+                        <a href='https://docs.google.com/document/d/1uaEc-aFRhHDnGBNKJ3qjdnSReuMg5TwR/edit?usp=sharing&ouid=112740472838668148998&rtpof=true&sd=true, _blank'>Download</a>
+                    </div>
+                        
                 </div>
             </section>
         </main>
