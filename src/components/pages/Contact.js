@@ -17,35 +17,50 @@ function Contact() {
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
+        setErrorMessage("");
 
         // Set state for first name, last name, and email
         if (inputType === "firstName") {
             setFirstName(inputValue);
-        } else if (inputType === "lastName") {
+
+            if (firstName === "") {
+                setErrorMessage("First Name is invalid");
+                return;
+            }
+        }
+
+        if (inputType === "lastName") {
+            
             setLastName(inputValue);
-        } else if (inputType === "email") {
+          
+            if (lastName === "") {
+                setErrorMessage("Last Name is invalid");
+                return;
+            }
+        }
+
+        if (inputType === "email") {
+           
             setEmail(inputValue);
+            
+            if (!validateEmail(email)) {
+                setErrorMessage("Email address is invalid");
+                return;
+            }
         }
     };
 
+    // Validate form before submit
     const handleFormSubmit = (e) => {
+        
         console.log(e.target);
-        e.preventDefault();
-
-        if (!firstName || !lastName) {
-            setErrorMessage("First Name or Last Name is invalid");
-            return;
+        
+        if (validateEmail && firstName !== "" && lastName !== ""){ 
+            window.open(`mailto:${email}?subject=Email%20Test&body=First%20Name:%20${firstName} %0D%0A Last%20Name:%20 ${lastName}`, '_self');
+        } else {
+            e.preventDefault();
         }
 
-        if (!validateEmail(email)) {
-            setErrorMessage("email address is invalid");
-            return;
-        }
-
-        setFirstName("");
-        setLastName("");
-        setEmail("");
-        setErrorMessage("");
     };
 
     // return form
@@ -53,29 +68,28 @@ function Contact() {
         <main>
             <section id="contact-me">
                 <h1 className="sub-heading">Contact me</h1>
-                <form>
+                <form >
                     <label>First Name:</label>
                     <br />
-                    <input name="firstName" onChange={handleInputChange} />
+                    <input name="firstName" onMouseOut={handleInputChange} />
                     <br />
                     <label>Last Name:</label>
                     <br />
-                    <input name="lastName" onChange={handleInputChange} />
+                    <input name="lastName" onMouseOut={handleInputChange} />
                     <br />
                     <label>Email:</label>
                     <br />
-                    <input name="email" onChange={handleInputChange} />
+                    <input name="email" onMouseOut={handleInputChange} />
                     <br />
                     <div>
                         <button
                             id="submit"
-                            type="button"
+                            type="submit"
                             onClick={handleFormSubmit}
                         >
                             Send
                         </button>
                     </div>
-
                     <p className="error-text">{errorMessage}</p>
                 </form>
             </section>
