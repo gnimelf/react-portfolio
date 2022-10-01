@@ -422,12 +422,12 @@ footer h2 {
     justify-content:space-between;
 }
 #dl-resume{
-    margin: 20px;
+    margin-top: 30px;
 }
 #dl-resume a {
     background-color: #112b3c;
     color: white;
-
+    text-decoration: none;
     padding: 20px;
     border-radius: 20px;
 }
