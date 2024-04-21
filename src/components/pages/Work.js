@@ -29,7 +29,7 @@ export default function Work() {
                     <figure className="link-img">
                         <p className="tag">MVC Group Project 2</p>
                         <a
-                            href="https://shopping-list-project2.herokuapp.com"
+                            href="https://shopping-list-project2-0b9aea2e98e9.herokuapp.com/"
                             target="_blank" rel="noopener noreferrer"
                         >
                             <section className="sub-project sub-proj3"></section>
